@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="urlEnter">Enter the URL:</string>
+    <string name="load">Скачать</string>
+</resources>
