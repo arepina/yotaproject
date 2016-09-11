@@ -36,7 +36,8 @@
         android:gravity="center_vertical"
         android:textColor="@color/colorText"
         android:textSize="@dimen/textSize"
-        android:hint="@string/hint" />
+        android:hint="@string/hint"
+        android:textColorHint="@color/colorTextHint" />
 
     <Button
         android:id="@+id/loadButton"
@@ -70,6 +71,7 @@
             android:layout_marginTop="@dimen/codeTopMargin"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/colorText"
+            android:textColorHint="@color/colorTextHint"
             android:textSize="@dimen/textSize" />
 
     </ScrollView>
