@@ -3,62 +3,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="yota.project.MainActivity"
-    android:background="@color/colorBackground">
+    tools:context="yota.project.MainActivity">
 
     <TextView
+        android:id="@+id/URLtextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/fieldsHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
         android:text="@string/urlEnter"
         android:textColor="@color/colorText"
-        android:id="@+id/URLtextView"
-        android:textSize="@dimen/textSize"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="@dimen/textSize" />
 
     <EditText
+        android:id="@+id/URLeditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/URLeditText"
-        android:layout_alignBottom="@+id/URLtextView"
-        android:layout_alignParentRight="true"
+        android:layout_above="@+id/loadButton"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/URLtextView"
-        android:layout_toEndOf="@+id/URLtextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="@dimen/urlMargin"
+        android:layout_toEndOf="@+id/URLtextView"
+        android:layout_toRightOf="@+id/URLtextView"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorText"
         android:textSize="@dimen/textSize"
-        android:layout_alignParentTop="true" />
+        android:hint="@string/hint" />
 
     <Button
+        android:id="@+id/loadButton"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/loadButtonHeight"
-        android:text="@string/load"
-        android:id="@+id/loadButton"
-        android:layout_below="@+id/URLtextView"
-        android:textSize="@dimen/textSize"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="@dimen/topMargin" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/URLtextView"
+        android:layout_marginTop="@dimen/topMargin"
+        android:background="@color/colorPrimary"
+        android:text="@string/load"
+        android:textSize="@dimen/textSize" />
 
-
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/codeTextView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/loadButton"
-        android:layout_marginTop="@dimen/topMargin" />
+        android:layout_below="@+id/loadButton">
+
+        <TextView
+            android:id="@+id/codeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/loadButton"
+            android:layout_marginTop="@dimen/codeTopMargin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize" />
+
+    </ScrollView>
 </RelativeLayout>

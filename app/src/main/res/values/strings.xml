@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">project</string>
+    <string name="app_name">Yota Project</string>
     <string name="urlEnter">Enter the URL:</string>
-    <string name="load">Скачать</string>
+    <string name="load">Load</string>
+    <string name="loadError">There was an error during the HTML loading. Try again</string>
+    <string name="urlError">URL is incorrect. Try again</string>
+    <string name="internetError">Turn the internet on</string>
+    <string name="hint">http://yandex.ru</string>
 </resources>

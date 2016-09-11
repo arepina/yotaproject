@@ -6,4 +6,6 @@
     <dimen name="topMargin">10dp</dimen>
     <dimen name="textSize">16dp</dimen>
     <dimen name="loadButtonHeight">30dp</dimen>
+    <dimen name="fieldsHeight">40dp</dimen>
+    <dimen name="codeTopMargin">5dp</dimen>
 </resources>
